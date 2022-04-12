@@ -87,8 +87,19 @@ $("#social").click(function (e) {
 });
 
 
-
-
+//點擊大頭貼//
+$(".main_wrap .photo").click(function (e) { 
+  $(".photo_dia").addClass("active");
+      setTimeout(function () {
+          $(".photo_dia").removeClass("active");
+      }, 1000);
+});
+$(".main_wrap .photo").click(function (e) { 
+  $(".photo_txt").addClass("active");
+      setTimeout(function () {
+          $(".photo_txt").removeClass("active");
+      }, 1000);
+});
     
 
 
