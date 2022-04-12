@@ -458,7 +458,7 @@ body::before {
   opacity: 0;
   display: none;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   .container .sec_container .main_wrap .work_wrap .fake {
     display: block;
   }
