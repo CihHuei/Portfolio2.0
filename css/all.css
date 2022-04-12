@@ -5,7 +5,6 @@
 }
 html, body {
   width: 100%;
-  height: 100%;
   background-color: #ffffff;
   font-family: "Noto Sans TC";
 }
@@ -308,6 +307,11 @@ body::before {
 @media screen and (max-width: 768px) {
   .container .sec_container .main_wrap, .container .sec_container_about .main_wrap, .container_about .sec_container .main_wrap, .container_about .sec_container_about .main_wrap {
     padding: 60px 40px 150px 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .sec_container .main_wrap, .container .sec_container_about .main_wrap, .container_about .sec_container .main_wrap, .container_about .sec_container_about .main_wrap {
+    padding: 60px 20px 150px 20px;
   }
 }
 .container .sec_container .main_wrap .bigtitle h1, .container .sec_container_about .main_wrap .bigtitle h1, .container_about .sec_container .main_wrap .bigtitle h1, .container_about .sec_container_about .main_wrap .bigtitle h1 {
@@ -773,6 +777,11 @@ body::before {
 @media screen and (max-width: 1280px) {
   .container .container_work .third_container .third_container_inside .content .description .con_txt, .container .container_work .third_container .third_container_inside .content .client .con_txt, .container .container_work .third_container .third_container_inside .content .concept .con_txt, .container .container_work .third_container .third_container_inside .content .link .con_txt {
     padding-right: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .container_work .third_container .third_container_inside .content .description .con_txt, .container .container_work .third_container .third_container_inside .content .client .con_txt, .container .container_work .third_container .third_container_inside .content .concept .con_txt, .container .container_work .third_container .third_container_inside .content .link .con_txt {
+    padding-right: 0;
   }
 }
 .container .container_work .third_container .third_container_inside .content .description .con_link, .container .container_work .third_container .third_container_inside .content .client .con_link, .container .container_work .third_container .third_container_inside .content .concept .con_link, .container .container_work .third_container .third_container_inside .content .link .con_link {
@@ -1297,13 +1306,15 @@ body::before {
 }
 
 .container_about {
-  height: 100%;
   margin: 20px;
   padding-top: 50px;
+  height: 100%;
 }
 @media screen and (max-width: 600px) {
   .container_about {
     margin: 10px;
+    height: auto;
+    overflow-x: hidden;
   }
 }
 .container_about .contact_bar_about {
@@ -1369,7 +1380,7 @@ body::before {
 @media screen and (max-width: 600px) {
   .container_about .contact_bar_about .square a {
     padding: 8px 8px;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .container_about .contact_bar_about .square a:hover {
@@ -1435,9 +1446,6 @@ body::before {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1505,6 +1513,7 @@ body::before {
           column-gap: 15px;
   row-gap: 15px;
   margin: 27px 0;
+  width: 60%;
 }
 @media screen and (max-width: 600px) {
   .container_about .sec_container_about .main_wrap .bigtitle .skill_wrap {
@@ -1512,6 +1521,7 @@ body::before {
        -moz-column-gap: 10px;
             column-gap: 10px;
     row-gap: 10px;
+    width: 100%;
   }
 }
 .container_about .sec_container_about .main_wrap .bigtitle .skill_wrap .skill {
@@ -1534,16 +1544,16 @@ body::before {
   color: #fff;
   background-color: #000;
 }
-.container_about .sec_container_about .main_wrap .sectitle h2 {
+.container_about .sec_container_about .main_wrap .sectitle h2, .container_about .sec_container_about .main_wrap .jobtitle h2 {
   font-size: 28px;
   font-weight: 600;
 }
 @media screen and (max-width: 600px) {
-  .container_about .sec_container_about .main_wrap .sectitle h2 {
+  .container_about .sec_container_about .main_wrap .sectitle h2, .container_about .sec_container_about .main_wrap .jobtitle h2 {
     font-size: 25px;
   }
 }
-.container_about .sec_container_about .main_wrap .sectitle .tool_wrap {
+.container_about .sec_container_about .main_wrap .sectitle .tool_wrap, .container_about .sec_container_about .main_wrap .sectitle .job_wrap, .container_about .sec_container_about .main_wrap .jobtitle .tool_wrap, .container_about .sec_container_about .main_wrap .jobtitle .job_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1554,16 +1564,18 @@ body::before {
           column-gap: 15px;
   row-gap: 15px;
   margin: 27px 0;
+  width: 60%;
 }
 @media screen and (max-width: 600px) {
-  .container_about .sec_container_about .main_wrap .sectitle .tool_wrap {
+  .container_about .sec_container_about .main_wrap .sectitle .tool_wrap, .container_about .sec_container_about .main_wrap .sectitle .job_wrap, .container_about .sec_container_about .main_wrap .jobtitle .tool_wrap, .container_about .sec_container_about .main_wrap .jobtitle .job_wrap {
     -webkit-column-gap: 10px;
        -moz-column-gap: 10px;
             column-gap: 10px;
     row-gap: 10px;
+    width: 100%;
   }
 }
-.container_about .sec_container_about .main_wrap .sectitle .tool_wrap .tool {
+.container_about .sec_container_about .main_wrap .sectitle .tool_wrap .tool, .container_about .sec_container_about .main_wrap .sectitle .job_wrap .tool, .container_about .sec_container_about .main_wrap .jobtitle .tool_wrap .tool, .container_about .sec_container_about .main_wrap .jobtitle .job_wrap .tool {
   padding: 10px 15px;
   border: solid 2px #000;
   position: relative;
@@ -1573,13 +1585,26 @@ body::before {
   transition: 0.5s;
 }
 @media screen and (max-width: 600px) {
-  .container_about .sec_container_about .main_wrap .sectitle .tool_wrap .tool {
+  .container_about .sec_container_about .main_wrap .sectitle .tool_wrap .tool, .container_about .sec_container_about .main_wrap .sectitle .job_wrap .tool, .container_about .sec_container_about .main_wrap .jobtitle .tool_wrap .tool, .container_about .sec_container_about .main_wrap .jobtitle .job_wrap .tool {
     font-size: 18px;
     font-weight: 500;
     padding: 8px 10px;
   }
 }
-.container_about .sec_container_about .main_wrap .sectitle .tool_wrap .tool:hover {
+.container_about .sec_container_about .main_wrap .sectitle .tool_wrap .tool:hover, .container_about .sec_container_about .main_wrap .sectitle .job_wrap .tool:hover, .container_about .sec_container_about .main_wrap .jobtitle .tool_wrap .tool:hover, .container_about .sec_container_about .main_wrap .jobtitle .job_wrap .tool:hover {
   color: #fff;
   background-color: #000;
+}
+.container_about .sec_container_about .main_wrap .sectitle .tool_wrap .job, .container_about .sec_container_about .main_wrap .sectitle .job_wrap .job, .container_about .sec_container_about .main_wrap .jobtitle .tool_wrap .job, .container_about .sec_container_about .main_wrap .jobtitle .job_wrap .job {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding-bottom: 30px;
+  font-size: 22px;
+}
+@media screen and (max-width: 600px) {
+  .container_about .sec_container_about .main_wrap .sectitle .tool_wrap .job, .container_about .sec_container_about .main_wrap .sectitle .job_wrap .job, .container_about .sec_container_about .main_wrap .jobtitle .tool_wrap .job, .container_about .sec_container_about .main_wrap .jobtitle .job_wrap .job {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }

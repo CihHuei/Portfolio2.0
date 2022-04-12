@@ -25,7 +25,6 @@ $allborder: solid 3px #000
 
 html,body
     width: 100%
-    height: 100%
     background-color: #ffffff
     font-family: "Noto Sans TC"
 body
@@ -245,7 +244,7 @@ body
             @include pad768
                 padding: 60px 40px 150px 40px
             @include phone600
-
+                padding: 60px 20px 150px 20px
             .bigtitle
                 h1
                     font-size: 35px
@@ -534,6 +533,8 @@ body
                             line-height: 25px
                             @include notebook1280
                                 padding-right: 12px
+                            @include phone600
+                                padding-right: 0
                         .con_link 
                             text-decoration: none
                             font-size: 16px
@@ -998,11 +999,13 @@ body
 
 //關於我//
 .container_about
-    height: 100%
     margin: 20px
     padding-top: 50px
+    height: 100%
     @include phone600
         margin: 10px
+        height: auto
+        overflow-x: hidden
     .contact_bar_about
         background-color: #fff
         position: fixed
@@ -1041,7 +1044,7 @@ body
                 box-sizing: border-box
                 @include phone600
                     padding: 8px 8px
-                    font-size: 18px
+                    font-size: 16px
                 &:hover
                     background-color: #fff
                     border: $allborder
@@ -1083,7 +1086,6 @@ body
             .photo
                 display: flex
                 width: 100%
-                justify-content: center
                 align-items: center
                 cursor: pointer
                 .photo_dia
@@ -1123,9 +1125,11 @@ body
                     column-gap: 15px
                     row-gap: 15px
                     margin: 27px 0
+                    width: 60%
                     @include phone600
                         column-gap: 10px
                         row-gap: 10px
+                        width: 100%
                     .skill
                         padding: 10px 15px
                         border: solid 2px #000
@@ -1140,21 +1144,23 @@ body
                         &:hover
                             color: #fff
                             background-color: #000
-            .sectitle
+            .sectitle, .jobtitle
                 h2
                     font-size: 28px
                     font-weight: 600
                     @include phone600
                         font-size: 25px
-                .tool_wrap
+                .tool_wrap, .job_wrap
                     display: flex
                     flex-wrap: wrap
                     column-gap: 15px
                     row-gap: 15px
                     margin: 27px 0
+                    width: 60%
                     @include phone600
                         column-gap: 10px
                         row-gap: 10px
+                        width: 100%
                     .tool
                         padding: 10px 15px
                         border: solid 2px #000
@@ -1169,3 +1175,12 @@ body
                         &:hover
                             color: #fff
                             background-color: #000
+                    .job
+                        position: relative
+                        display: block
+                        text-decoration: none
+                        padding-bottom: 30px
+                        font-size: 22px
+                        @include phone600
+                            font-size: 18px
+                            font-weight: 500 
