@@ -225,6 +225,7 @@ body::before {
 .container {
   margin: 20px;
   padding-top: 50px;
+  height: 100%;
 }
 @media screen and (max-width: 600px) {
   .container {
@@ -270,7 +271,6 @@ body::before {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 100%;
 }
 .container .sec_container::before {
   content: "";
@@ -453,6 +453,15 @@ body::before {
           transform-origin: center center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.container .sec_container .main_wrap .work_wrap .fake {
+  opacity: 0;
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  .container .sec_container .main_wrap .work_wrap .fake {
+    display: block;
+  }
 }
 .container .left_side {
   width: 400px;
@@ -1260,14 +1269,20 @@ body::before {
   *              transform: rotate(135deg)
   *               */
 }
-.container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic, .container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic_2 {
+.container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic, .container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic_3 {
   background-color: #000;
 }
-.container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic .swiper .swiper-pagination .swiper-pagination-bullet, .container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic_2 .swiper .swiper-pagination .swiper-pagination-bullet {
+.container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic .swiper .swiper-pagination .swiper-pagination-bullet, .container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic_3 .swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: #000;
 }
-.container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic .swiper .swiper-wrapper .swiper-slide img, .container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic_2 .swiper .swiper-wrapper .swiper-slide img {
+.container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic .swiper .swiper-wrapper .swiper-slide img, .container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic_3 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
+}
+.container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic {
+  padding-top: 80px;
+}
+.container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic_3 {
+  padding-bottom: 70px;
 }
 
 .container .contact_bar_about {

@@ -193,6 +193,7 @@ body
 .container
     margin: 20px
     padding-top: 50px
+    height: 100%
     @include phone600
         margin: 10px
     .contact_bar
@@ -222,7 +223,6 @@ body
         border-top: none
         display: flex
         position: relative
-        height: 100%
         &::before
             content: ""
             height:100%
@@ -329,6 +329,11 @@ body
                                 transform: scale(110%)
                                 transform-origin: center center
                                 transition: .3s
+                .fake
+                    opacity: 0
+                    display: none
+                    @include notebook1280
+                        display: block
     .left_side
         width: 400px
         height: calc( 100% - 50px )
@@ -874,7 +879,7 @@ body
             .empty
             .work_main_wrap
                 .work_wrap
-                    .work_item_magic, .work_item_magic_2
+                    .work_item_magic, .work_item_magic_3
                         background-color: #000
                         .swiper
                             .swiper-pagination
@@ -884,6 +889,10 @@ body
                                 .swiper-slide
                                     img
                                         width: 100% 
+                    .work_item_magic
+                        padding-top: 80px
+                    .work_item_magic_3
+                        padding-bottom: 70px
                     /*
                         .container
                             position: relative
