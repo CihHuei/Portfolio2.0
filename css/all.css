@@ -77,6 +77,9 @@ body::before {
   .navbar {
     margin: 10px 10px 0 10px;
     width: calc( 100% - 20px );
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
   }
 }
 .navbar .square {
@@ -95,7 +98,7 @@ body::before {
 }
 @media screen and (max-width: 600px) {
   .navbar .txt .name {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
   }
 }
@@ -267,6 +270,7 @@ body::before {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  height: 100%;
 }
 .container .sec_container::before {
   content: "";
@@ -772,7 +776,7 @@ body::before {
   }
 }
 .container .container_work .third_container .third_container_inside .backtohome {
-  margin-top: 10px;
+  margin-top: auto;
 }
 @media screen and (max-width: 768px) {
   .container .container_work .third_container .third_container_inside .backtohome {
@@ -1306,6 +1310,13 @@ body::before {
     left: 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .container .contact_bar_about .square {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .container .contact_bar_about .square a {
   display: block;
   text-decoration: none;
@@ -1321,7 +1332,7 @@ body::before {
 }
 @media screen and (max-width: 600px) {
   .container .contact_bar_about .square a {
-    padding: 8px 10px;
+    padding: 8px 8px;
     font-size: 18px;
   }
 }
@@ -1337,7 +1348,7 @@ body::before {
           transform: translateY(-10px);
   background-color: #fff;
   color: #000;
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 .container .contact_bar_about .square .phoneBtn {
   margin-left: 30px;
@@ -1345,7 +1356,7 @@ body::before {
 @media screen and (max-width: 600px) {
   .container .contact_bar_about .square .phoneBtn {
     padding: 8px 10px;
-    margin-left: 0;
+    margin-left: 8px;
   }
 }
 .container .sec_container {
