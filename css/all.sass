@@ -90,6 +90,9 @@ body
             font-size: 30px
             color: #000
             font-weight: 700
+            @include phone600
+               font-size: 24px 
+               font-weight: 800
         .career
             font-size: 18px
             color: #000
@@ -110,6 +113,7 @@ body
             color: #fff
             font-weight: 800
             line-height: 55px
+            text-align: center
         .back
             display: none
 
@@ -249,12 +253,18 @@ body
                     column-gap: 15px
                     row-gap: 15px
                     margin: 27px 0
+                    @include phone600
+                        column-gap: 10px
+                        row-gap: 10px
                     .category
                         padding: 10px 15px
                         border: solid 2px #000
                         position: relative
                         display: block
                         text-decoration: none
+                        @include phone600
+                            font-size: 18px
+                            padding: 10px 8px
                         span
                             font-size: 18px
                             font-weight: 500
@@ -398,6 +408,8 @@ body
                                 font-weight: 600
                                 margin: 10px 0 30px 0
                                 color: #000
+                                @include phone600
+                                    font-size: 28px
                         .otherwork_sum
                             display: flex
                             column-gap: 20px
@@ -474,6 +486,8 @@ body
                     br
                         @include pad768
                             display: none
+                        @include phone600
+                            display: block
                     h1
                         font-size: 30px
                         font-weight: 600
@@ -512,6 +526,9 @@ body
                             font-weight: 300
                             color: #000
                             text-decoration: underline
+                        .br_magic
+                            @include phone600
+                                display: none
                     .link
                         margin-top: 35px
                         @include pad768
@@ -668,6 +685,8 @@ body
                                 line-height: 1.2em
                                 @include pad1024
                                     font-size: 20px
+                                @include phone600
+                                    font-size: 18px
                         .threepic
                             display: flex
                             column-gap: 5px
@@ -707,6 +726,8 @@ body
                                         font-weight: 500
                                         @include pad1024
                                             font-size: 22px
+                                        @include phone600
+                                            font-size: 20px
                                     p
                                         font-size: 20px
                                         font-weight: 500
@@ -714,11 +735,14 @@ body
                                         margin-top: 10px
                                         @include pad1024
                                             font-size: 18px
+                                        @include phone600
+                                            font-size: 15px
                             .pic_sum_trex
                                 display: flex
                                 column-gap: 14px
                                 justify-content: center
                                 flex-wrap: wrap
+                                padding: 0 20px
                                 .apic_trex
                                     width: 17%
                                     @include pad1024
@@ -831,9 +855,6 @@ body
                             .phonepic
                                 display: none
                                 width: 100%
-                                display: flex
-                                flex-direction: column
-                                row-gap: 8px
                                 .apic
                                     margin-bottom: 5px
                                     img
@@ -993,6 +1014,9 @@ body
                 border: $allborder
                 padding: 10px 20px
                 box-sizing: border-box
+                @include phone600
+                    padding: 8px 10px
+                    font-size: 18px
                 &:hover
                     background-color: #fff
                     border: $allborder
@@ -1002,9 +1026,12 @@ body
                 transform: translateY(-10px)
                 background-color: #fff
                 color: #000
-                padding: 10px 30px
+                padding: 15px 30px
             .phoneBtn
                 margin-left: 30px
+                @include phone600
+                    padding: 8px 10px
+                    margin-left: 0
     .sec_container
         border: $allborder
         border-top: none
@@ -1031,12 +1058,17 @@ body
                 h1
                     font-size: 35px
                     font-weight: 600
+                    @include phone600
+                        font-size: 25px
                 .skill_wrap
                     display: flex
                     flex-wrap: wrap
                     column-gap: 15px
                     row-gap: 15px
                     margin: 27px 0
+                    @include phone600
+                        column-gap: 10px
+                        row-gap: 10px
                     .skill
                         padding: 10px 15px
                         border: solid 2px #000
@@ -1044,6 +1076,10 @@ body
                         display: block
                         text-decoration: none
                         transition: .5s
+                        @include phone600
+                            font-size: 18px
+                            font-weight: 500 
+                            padding: 8px 10px
                         &:hover
                             color: #fff
                             background-color: #000
@@ -1051,12 +1087,17 @@ body
                 h2
                     font-size: 28px
                     font-weight: 600
+                    @include phone600
+                        font-size: 25px
                 .tool_wrap
                     display: flex
                     flex-wrap: wrap
                     column-gap: 15px
                     row-gap: 15px
                     margin: 27px 0
+                    @include phone600
+                        column-gap: 10px
+                        row-gap: 10px
                     .tool
                         padding: 10px 15px
                         border: solid 2px #000
@@ -1064,6 +1105,10 @@ body
                         display: block
                         text-decoration: none
                         transition: .5s
+                        @include phone600
+                            font-size: 18px
+                            font-weight: 500 
+                            padding: 8px 10px
                         &:hover
                             color: #fff
                             background-color: #000
