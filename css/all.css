@@ -1295,6 +1295,9 @@ body::before {
 .container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic .swiper .swiper-pagination .swiper-pagination-bullet, .container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic_3 .swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: #000;
 }
+.container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic .swiper .swiper-wrapper .swiper-slide, .container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic_3 .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
 .container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic .swiper .swiper-wrapper .swiper-slide img, .container .container_work .sec_container_work .work_main_wrap .work_wrap .work_item_magic_3 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
